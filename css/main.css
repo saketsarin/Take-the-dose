@@ -57,6 +57,22 @@
     border-bottom: 2px solid #00A03A;
 }
 
+.signUp{
+    border: 1px solid #00A03A;
+    border-radius: 16px;
+    color: #fff;
+    background-color: #00A03A;
+    text-decoration: none;
+}
+
+.signIn{
+    border: 1px solid #00A03A;
+    border-radius: 16px;
+    background-color: #fff;
+    color: #00A03A;
+    text-decoration: none;
+}
+
 .contentBox img{
     float: right;
 }
