@@ -1,90 +1,90 @@
-.menu{
-    display: flex;
-    list-style: none;
-    align-items: center;
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
-.menu li a{
-    padding-right: 45px;
-    font-weight: 700;
-    color: #00A03A;
-    font-size: 20px;
-    text-decoration: none;
+.menu li a {
+  padding-right: 45px;
+  font-weight: 700;
+  color: #00a03a;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-.menu li a:hover{
-    text-decoration: underline;
+.menu li a:hover {
+  text-decoration: underline;
 }
 
-.contentBox{
-    margin: 50px;
-    display: flex;
-    justify-content: space-between;
+.contentBox {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.headContent{
-    font-size: 63px;
-    font-weight: bolder;
-    width: 450px;
-    margin-bottom: 30px;
+.headContent {
+  font-size: 63px;
+  font-weight: bolder;
+  width: 450px;
+  margin-bottom: 30px;
 }
 
-.text1{
-    color: #00A03A;
+.text1 {
+  color: #00a03a;
 }
 
-.text2{
-    border-bottom: 7px solid #00A03A;
-    display: inline-block;
-    width: 215px;
-    color: #4E4E4E;
+.text2 {
+  border-bottom: 7px solid #00a03a;
+  display: inline-block;
+  width: 215px;
+  color: #4e4e4e;
 }
 
-.text3{
-    display: inline-block;
-    width: 200px;
-    color: #4E4E4E;
+.text3 {
+  display: inline-block;
+  width: 200px;
+  color: #4e4e4e;
 }
 
-.text4{
-    color: #00A03A;
-    display: inline-block;
+.text4 {
+  color: #00a03a;
+  display: inline-block;
 }
 
-.smallContent{
-    font-size: 40px;
-    display: inline-block;
-    margin-bottom: 30px;
+.smallContent {
+  font-size: 40px;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
-.signUp{
-    border: 1px solid #00A03A;
-    border-radius: 16px;
-    color: #fff;
-    background-color: #00A03A;
-    font-weight: bold;
-    text-decoration: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 20px;
+.signUp {
+  border: 1px solid #00a03a;
+  border-radius: 16px;
+  color: #fff;
+  background-color: #00a03a;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
 }
 
-.signIn{
-    border: 4px solid #00A03A;
-    border-radius: 16px;
-    background-color: #fff;
-    color: #00A03A;
-    font-weight: bold;
-    text-decoration: none;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 20px;
-    padding-right: 20px;
+.signIn {
+  border: 4px solid #00a03a;
+  border-radius: 16px;
+  background-color: #fff;
+  color: #00a03a;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.contentBox img{
-    float: right;
-    padding-right: 50px;
+.contentBox img {
+  float: right;
+  padding-right: 50px;
 }
