@@ -11,6 +11,41 @@
 </head>
 
 <body>
+    <script>
+
+        //pass the form data into the login function with param name data
+        const login = (data) => {
+
+            
+            var raw = JSON.stringify(body);
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+
+            fetch('http://localhost:3000/patients/login',{
+                method: 'POST', 
+                headers: myHeaders,
+                body: raw,
+            })
+            .then(response => {
+                if (response.status == 200) {
+                    // go to the main page
+                }
+                else if (response.status == 400) {
+                    console.log("User does not exist")
+                }
+                else if (response.status == 201) {
+                    console.log("wrong password")
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                
+            }) 
+        }
+
+    </script>
+
+
     <header class="header">
         <div class="logo"><img src="./favicon.svg" alt="logo"></div>
     </header>
@@ -21,9 +56,10 @@
             </div>
             <form action="#" method="post" class="form">
                 <label for="email">Email</label>
-                <input type="email" class="email" placeholder="robert@xyz.com">
+                <input type="email" name="name" class="email" placeholder="robert@xyz.com">
                 <label for="password">Create Password</label>
-                <input type="password" class="password" placeholder="**********">
+                <input type="password" name="password" class="password" placeholder="**********">
+                <button type="submit" value="Submit" onclick="login()">Submit</button>
             </form>
             <div class="signUpPrompt">
                 Don't have an account? <a href="./signup.html">Sign Up</a>.

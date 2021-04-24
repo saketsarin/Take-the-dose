@@ -15,7 +15,7 @@ exports.loginPatient = async (req, res, next) => {
                   return  res.status(200).send("successfully login")
                 }
                 else {
-                 return   res.status(200).send("Wrong password")
+                 return   res.status(201).send("Wrong password")
                 }
              }
              catch {
