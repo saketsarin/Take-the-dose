@@ -1,0 +1,27 @@
+{
+  "name": "hackbmu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongo-uri-builder": "^3.2.2",
+    "mongoose": "^5.12.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelloggy/hackbmu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelloggy/hackbmu/issues"
+  },
+  "homepage": "https://github.com/kelloggy/hackbmu#readme"
+}
