@@ -14,7 +14,8 @@
     <script>
 
         //pass the form data into the login function with param name data
-        const login = (data) => {
+        function login  (data) {
+            console.log(data)
 
             
             var raw = JSON.stringify(body);
@@ -56,10 +57,9 @@
             </div>
             <form action="#" method="post" class="form">
                 <label for="email">Email</label>
-                <input type="email" name="name" class="email" placeholder="robert@xyz.com">
+                <input name="name" type="email" class="email" placeholder="robert@xyz.com">
                 <label for="password">Create Password</label>
                 <input type="password" name="password" class="password" placeholder="**********">
-                <button type="submit" value="Submit" onclick="login()">Submit</button>
             </form>
             <div class="signUpPrompt">
                 Don't have an account? <a href="./signup.html">Sign Up</a>.
