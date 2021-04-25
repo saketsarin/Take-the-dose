@@ -72,16 +72,30 @@
 }
 
 .medName {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 23px;
-  padding-top: 7px;
+  padding: 7px;
+}
+
+.medAmount{
+  font-weight: 500;
+  font-size: 23px;
+  padding: 7px;
+  width: 28px;
+}
+
+.medDays{
+  font-weight: 500;
+  font-size: 23px;
+  padding: 7px;
+  width: 42px;
 }
 
 .pills {
   padding-top: 13px;
   width: 50px;
   height: 50px;
-  padding-left: 30px;
+  padding-left: 20px;
   padding-right: 10px;
 }
 

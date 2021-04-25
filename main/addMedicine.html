@@ -15,7 +15,7 @@
         <div class="logo"><img src="./favicon.svg" alt="logo"></div>
     </header>
     <div class="topContainer">
-        <div class="container1">
+        <form action="" method="POST" class="container1">
             <div class="welcome">
                 Add<br>
                 <div class="name">
@@ -29,7 +29,7 @@
                 <a class="medicine">
                     <img src="./images/img5.svg" class="medImage" alt="medicine">
                     <div class="medText">
-                        <div class="medName">Oxycodone</div>
+                        <input type="text" name="medName" id="medName" class="medName" placeholder="Oxycodone">
                     </div>
                 </a>
             </div>
@@ -41,14 +41,14 @@
                     <a class="medicine2">
                         <img src="./images/img8.svg" class="medImage" alt="medicine">
                         <div class="medText">
-                            <div class="medName">2</div>
+                            <input type="number" name="medAmount" id="medAmount" class="medAmount" placeholder="2">
                         </div>
                         <div class="pills">pills</div>
                     </a>
                     <a class="medicine2">
                         <img src="./images/img9.svg" class="medImage" alt="medicine">
                         <div class="medText">
-                            <div class="medName">30</div>
+                            <input type="number" name="medDays" id="medDays" class="medDays" placeholder="30">
                         </div>
                         <div class="pills">days</div>
                     </a>
@@ -62,7 +62,7 @@
                     <a class="medicine">
                         <img src="./images/img10.svg" class="medImage" alt="medicine">
                         <div class="medText">
-                            <div class="medName">10:00 AM</div>
+                            <input type="time" name="medTime" id="medTime" class="medName">
                         </div>
                     </a>
                     <button class="addButton">
@@ -70,7 +70,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </form>
         <div class="container4">
             <img src="./images/img7.svg" alt="Doctor" class="doctorImg">
             <button onclick="" class="submitButton">
