@@ -5,14 +5,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Exercise</title>
-    <link rel="stylesheet" href="/css/header.css">
+    <title>Daily Review</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/dailyexercise.css">
 </head>
 
 <body>
+    <script>
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+            document.getElementById("container").scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
     <header class="header">
         <div class="logo"><img src="./favicon.svg" alt="logo"></div>
     </header>
+    <div class="topContainer">
+        <div class="container1">
+            <div class="welcome">
+                Hello,<br>
+                <div class="name">
+                    Name Here
+                </div>
+            </div>
+            <div class="text1">
+                Here is your
+            </div>
+            <div class="text2">
+                Daily Physical Exercise.
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="./images/exercise1.svg" alt="exercise1" onclick="myFunction(this);">
+            <p>Exercise1</p>
+        </div>
+        <div class="column">
+            <img src="./images/exercise2.svg" alt="exercise2" onclick="myFunction(this);">
+            <p>Exercise2</p>
+        </div>
+        <div class="column">
+            <img src="./images/exercise3.svg" alt="exercise3" onclick="myFunction(this);">
+            <p>Exercise3</p>
+        </div>
+        <div class="column">
+            <img src="./images/exercise1.svg" alt="exercise1" onclick="myFunction(this);">
+            <p>Exercise1</p>
+        </div>
+        <div class="column">
+            <img src="./images/exercise2.svg" alt="exercise2" onclick="myFunction(this);">
+            <p>Exercise2</p>
+        </div>
+        <div class="column">
+            <img src="./images/exercise3.svg" alt="exercise3" onclick="myFunction(this);">
+            <p>Exercise3</p>
+        </div>
+        <div class="column">
+            <img src="./images/exercise1.svg" alt="exercise1" onclick="myFunction(this);">
+            <p>Exercise1</p>
+        </div>
+        <div class="column">
+            <img src="./images/exercise2.svg" alt="exercise2" onclick="myFunction(this);">
+            <p>Exercise2</p>
+        </div>
+        <div class="column">
+            <img src="./images/exercise3.svg" alt="exercise3" onclick="myFunction(this);">
+            <p>Exercise3</p>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
 </body>
 
 </html>
