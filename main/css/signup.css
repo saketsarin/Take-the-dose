@@ -16,6 +16,7 @@
   font-size: 50px;
   font-weight: bolder;
   margin-left: 70px;
+  margin-top: -20px;
   width: 210px;
 }
 
@@ -36,6 +37,10 @@
   border: none;
   border-radius: 3px;
   margin-bottom: 20px;
+}
+
+.button{
+
 }
 
 .signInPrompt {

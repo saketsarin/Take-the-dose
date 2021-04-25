@@ -6,7 +6,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "expressjs": "^1.0.1",
     "mongo-uri-builder": "^3.2.2",
+    "mongodb": "^3.6.6",
     "mongoose": "^5.12.5"
   },
   "devDependencies": {},
