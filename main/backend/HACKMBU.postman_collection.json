@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "e520949c-04d6-404c-945b-b4fbe2aeb4ba",
+		"name": "HACKMBU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patients/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"thor@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/patients/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Michael Jackson\",\r\n    \"email\": \"miachael@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"dailyReview\": [\r\n        {\r\n            \"pillName\": \"Oxygen\",\r\n            \"amount\": 3,\r\n            \"notifyDateTime\": \"2012-11-04T14:51:06.157Z\"\r\n        },\r\n        {\r\n            \"pillName\": \"Water\",\r\n            \"amount\": 3,\r\n            \"notifyDateTime\": \"2012-11-04T14:51:06.157Z\"\r\n        }\r\n    ],\r\n    \"dailyExercise\": [\r\n        {\r\n            \"name\": \"Push up\"\r\n        }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patients/:patientId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Thor (edited)\",\r\n        \"email\": \"thor@gmail.com\",\r\n        \"password\": \"1234\",\r\n        \"dailyReview\": [\r\n            {\r\n                \"_id\": \"608513d55e75fd436c45d500\",\r\n                \"pillName\": \"Water\",\r\n                \"amount\": 1,\r\n                \"notifyTime\": \"2012-11-04T14:51:06.157Z\"\r\n            },\r\n            {\r\n                \"_id\": \"608513d55e75fd436c45d501\",\r\n                \"pillName\": \"Paracetamol\",\r\n                \"amount\": 3,\r\n                \"notifyTime\": \"2012-11-04T14:51:06.157Z\"\r\n            }\r\n        ],\r\n        \"dailyExercise\": [\r\n            {\r\n                \"name\": \"sit up (10 minutes)\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/patients/608515695e75fd436c45d50b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients",
+						"608515695e75fd436c45d50b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patients/:patientId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/patients/608513d55e75fd436c45d4ff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients",
+						"608513d55e75fd436c45d4ff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patients/:patientId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/patients/608515695e75fd436c45d50b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients",
+						"608515695e75fd436c45d50b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

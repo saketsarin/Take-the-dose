@@ -6,9 +6,13 @@ module.exports =(mongoose) => {
         name: {type: String, require: true},
         password: {type: String, require: true},
         email: {type: String, require: false},
-        RemindersInfo: [{
-            name: { type: String, required: true },
-            remindTime: {type: Date, required: true}
+        dailyReview: [{
+            pillName: { type: String, required: true },
+            amount: {type: Number, required: true},
+            notifyDateTime: {type: Date, required: false} 
+        }],
+        dailyExercise: [{
+            name: { type: String, required: false },
         }]
     }, {
         strict: true,
