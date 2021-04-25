@@ -1,0 +1,125 @@
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container1 {
+  margin-top: -35px;
+  margin-left: 60px;
+}
+
+.welcome {
+  font-size: 35px;
+  color: #4e4e4e;
+  font-weight: 500;
+}
+
+.name {
+  color: #00a03a;
+  font-weight: bold;
+  border-bottom: 7px solid #00a03a;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.text1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.doctorImg {
+  width: 300px;
+  height: 500px;
+  margin-top: -80px;
+  margin-right: 250px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  width: 400px;
+}
+
+.container3 {
+  display: flex;
+}
+
+.medicine {
+  display: flex;
+  padding: 15px;
+  margin-bottom: 18px;
+  background-color: #f8f8f6;
+  border-radius: 30px;
+}
+
+.medicine2 {
+  display: flex;
+  padding: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 15px;
+  width: 200px;
+  margin-right: 20px;
+  background-color: #f8f8f6;
+  border-radius: 30px;
+}
+
+.medImage {
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.medName {
+  font-weight: 500;
+  font-size: 23px;
+  padding: 7px;
+}
+
+.medAmount{
+  font-weight: 500;
+  font-size: 23px;
+  padding: 7px;
+  width: 28px;
+}
+
+.medDays{
+  font-weight: 500;
+  font-size: 23px;
+  padding: 7px;
+  width: 42px;
+}
+
+.pills {
+  padding-top: 13px;
+  width: 50px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.container4{
+    display: flex;
+    flex-direction: column;
+}
+
+.addButton{
+    margin-left: 20px;
+    margin-top: 7px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+}
+
+.submitButton {
+  width: 500px;
+  padding: 15px;
+  color: #fff;
+  background-color: #00a03a;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-left: -90px;
+}
